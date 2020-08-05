@@ -10,10 +10,16 @@ const app = express();
 // Configurar CORS
 app.use(cors());
 
+// Lectura y parseo BODY
+app.use(express.json());
+
 // Conexion a la base de Datos
 dbConnection();
 
 
+// Rutas
+app.use ('/api/usuarios', require('./routes/usuario'));
+app.use ('/api/login', require('./routes/auth'));
 
 
 app.listen (process.env.PORT, () => {
