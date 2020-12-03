@@ -1,5 +1,4 @@
 # EXR - Backend
 
-Recuerder ejecutar 
-´npm install´
+Ejecutar  ´npm install´
 
